@@ -4,10 +4,27 @@ A cross-platform, Go-based alternative to `rimraf` for removing files and direct
 
 ## Features
 
-- Fast and reliable file/directory removal
-- Safe recursive deletes
-- Multi-platform support (Windows, macOS, Linux)
-- Simple CLI usage
+ MF is a sophisticated, cross-platform file deletion tool with advanced capabilities:
+Core Features:
+  - Recursive directory deletion (rimraf alternative)
+  - Dry run mode for safe previewing
+  - Pattern-based exclusion system
+  - Comprehensive asynchronous logging
+
+  Advanced Features (Windows):
+  - Process lock detection and termination
+  - System-critical process protection
+  - Admin privilege handling
+  - Performance optimizations with object pooling
+
+  Architecture:
+  - Worker pool pattern for concurrency
+  - Platform-specific implementations via build tags
+  - Defensive programming with extensive safety checks
+  - Context-based cancellation and timeout handling
+
+  The tool is designed for handling stubborn locked files, particularly in Windows environments where processes
+  commonly prevent file deletion.
 
 ## Installation
 
