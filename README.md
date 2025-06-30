@@ -23,3 +23,21 @@ Make sure you have [Go](https://golang.org/dl/) installed.
 git clone https://github.com/can-acar/mf.git
 cd mf
 go build -o mf
+```
+# Windows CMD ailas
+```sh
+doskey mf=<mf-build-path>
+doskey mf=mf.exe
+```
+
+# PowerShell alias
+```sh
+Set-Alias mfdel "C:\mf.exe"
+Set-Alias gs git
+
+notepad $PROFILE
+
+paste :
+Set-Alias mf "C:\mf.exe"
+Set-Alias gs git
+Set-Alias ga git
